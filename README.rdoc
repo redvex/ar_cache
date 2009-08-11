@@ -19,6 +19,10 @@ If you use this software, please make a donation[https://www.paypal.com/cgi-bin/
 * gem sources -a http://gems.github.com
 * gem install redvex-ar_cache
 
+Add in your config/enviroment.rb
+
+config.gem "redvex-ar_cache", :lib => 'ar_cache', :source => 'http://gems.github.com'
+
 ==Use ActiveRecord Cache
 
 If you want to perform a standard call using cache u can try
