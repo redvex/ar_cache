@@ -10,11 +10,12 @@ Gem::Specification.new do |s|
   s.description = %q{Performe ActiveRecord cache in File System for heavy and repetitive query.}
   s.email = %q{redvex@me.com}
   s.extra_rdoc_files = ["CHANGELOG", "lib/ar_cache.rb", "README.rdoc"]
-  s.files = ["ar_cache.gemspec", "CHANGELOG", "lib/ar_cache.rb", "Manifest", "Rakefile", "README.rdoc"]
+  s.files = ["ar_cache.gemspec", "CHANGELOG", "init.rb", "lib/ar_cache.rb", "Manifest", "Rakefile", "README.rdoc"]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/redvex/ar_cache}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Ar_cache", "--main", "README.rdoc"]
   s.require_paths = ["lib"]
+  s.rubyforge_project = %q{ar_cache}
   s.rubygems_version = %q{1.3.1}
   s.summary = %q{Performe ActiveRecord cache in File System for heavy and repetitive query.}
 
