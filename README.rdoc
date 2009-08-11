@@ -1,0 +1,58 @@
+Performe ActiveRecord cache in File System for heavy and repetitive query.
+
+==Licence
+
+Copyright 2009 Redvex. Distributes under the same terms as Ruby
+
+If you use this software, please "make a donation"[https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7415509]
+
+==Features
+
+* Perform any ActiveRecord Query
+* Set time of expire in database configuration
+* Obtain an Hash as u obtain from active record
+* Support for ActiveRecord shortcuts through (cache_find_first, cache_find_last, cache_find_all)
+
+=Usage
+
+==Installation
+gem sources -a http://gems.github.com
+gem install ar_cache
+
+==Use ActiveRecord Cache
+
+If you want to perform a standard call using cache u can try
+
+Object.cache_find(id, params)
+
+EX.
+Object.cache_find(10)
+or
+Object.cache_find(:all, :conditions => ['field>?',5])
+
+If you want to use an active record shortcuts you can:
+
+Object.cache_find_first(params)
+Object.cache_find_last(params)
+Object.cache_find_all(params)
+
+EX.
+
+Object.cache_find_first
+Object.cache_find_last
+Object.cache_find_all(:conditions => ['filed>?', 5])
+
+==Cache reset
+If you want to reset cache after predetermined amount of time you can specify time in database.yml config file through cache_expire directive:
+
+cache_expire: 1.day
+or
+cache_expire: 1.month
+
+If you want to force the expire the cache manually you can call the method
+
+cache_reset!(id, params=nil)
+or shortcuts
+cache_reset_first!(params=nil)
+cache_reset_last!(params=nil)
+cache_reset_all!(params=nil)

@@ -8,7 +8,7 @@ Echoe.new('ar_cache', '0.1.0') do |p|
   p.author         = "Gianni Mazza"
   p.email          = "redvex@me.com"
   p.ignore_pattern = ["tmp/*", "script/*"]
-  p.development_dependencies = [:json]
+  p.runtime_dependencies = ['json']
 end
 
 Dir["#{File.dirname(__FILE__)}/tasks/*.rake"].sort.each { |ext| load ext }
