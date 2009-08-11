@@ -21,7 +21,7 @@ If you use this software, please make a donation[https://www.paypal.com/cgi-bin/
 
 Add in your config/enviroment.rb
 
-config.gem "redvex-ar_cache", :lib => 'ar_cache', :source => 'http://gems.github.com'
+	config.gem "redvex-ar_cache", :lib => 'ar_cache', :source => 'http://gems.github.com'
 
 ==Use ActiveRecord Cache
 
