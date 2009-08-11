@@ -32,7 +32,7 @@ module ArCache
       
       filename   = calculate_file_name(id, params)
       if cache_reset?(filename)
-        cache_reset!(id, params)
+        cache_reset(id, params)
       end
       
       if File.exist?(filename)
