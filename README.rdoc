@@ -56,8 +56,8 @@ If you want to reset cache after predetermined amount of time you can specify ti
 
 If you want to force the expire the cache manually you can call the method
 
-* cache_reset!(id, params=nil)
+* cache_reset(id, params=nil)
 or shortcuts
-* cache_reset_first!(params=nil)
-* cache_reset_last!(params=nil)
-* cache_reset_all!(params=nil)
+* cache_reset_first(params=nil)
+* cache_reset_last(params=nil)
+* cache_reset_all(params=nil)
