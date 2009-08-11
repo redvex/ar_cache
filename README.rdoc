@@ -16,8 +16,8 @@ If you use this software, please make a donation[https://www.paypal.com/cgi-bin/
 =Usage
 
 ==Installation
-* gem sources -a http://gems.github.com
-* gem install redvex-ar_cache
+	gem sources -a http://gems.github.com
+	gem install redvex-ar_cache
 
 Add in your config/enviroment.rb
 
