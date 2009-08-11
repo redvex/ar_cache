@@ -4,7 +4,7 @@ Performe ActiveRecord cache in File System for heavy and repetitive query.
 
 Copyright 2009 Redvex. Distributes under the same terms as Ruby
 
-If you use this software, please "make a donation"[https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7415509]
+If you use this software, please make a donation[https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=7415509]
 
 ==Features
 
