@@ -70,19 +70,19 @@ module ArCache
       return cache_find(:all, params)
     end
     
-    def cache_reset_first!(params=nil)
+    def cache_reset_first(params=nil)
       return cache_reset(:first, params)
     end
     
-    def cache_reset_last!(params=nil)
+    def cache_reset_last(params=nil)
       return cache_reset(:last, params)
     end
     
-    def cache_reset_all!(params=nil)
+    def cache_reset_all(params=nil)
       return cache_reset(:all, params)
     end
     
-    def cache_reset!(id, params=nil)
+    def cache_reset(id, params=nil)
       filename   = calculate_file_name(id, params)
       File.delete(filename)
     end
