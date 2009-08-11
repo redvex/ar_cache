@@ -17,7 +17,7 @@ If you use this software, please make a donation[https://www.paypal.com/cgi-bin/
 
 ==Installation
 * gem sources -a http://gems.github.com
-* gem install ar_cache
+* gem install redvex-ar_cache
 
 ==Use ActiveRecord Cache
 
