@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.date = %q{2009-08-11}
   s.description = %q{Performe ActiveRecord cache in File System for heavy and repetitive query.}
   s.email = %q{redvex@me.com}
-  s.extra_rdoc_files = ["lib/ar_cache.rb", "README.rdoc"]
-  s.files = ["lib/ar_cache.rb", "Rakefile", "README.rdoc", "Manifest", "ar_cache.gemspec"]
+  s.extra_rdoc_files = ["CHANGELOG", "lib/ar_cache.rb", "README.rdoc"]
+  s.files = ["ar_cache.gemspec", "CHANGELOG", "lib/ar_cache.rb", "Manifest", "Rakefile", "README.rdoc"]
   s.has_rdoc = true
   s.homepage = %q{http://github.com/redvex/ar_cache}
   s.rdoc_options = ["--line-numbers", "--inline-source", "--title", "Ar_cache", "--main", "README.rdoc"]
