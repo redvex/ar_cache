@@ -45,8 +45,9 @@ EX.
 ==Cache reset
 If you want to reset cache after predetermined amount of time you can specify time in database.yml config file through cache_expire directive:
 
+* cache_expire: 30.seconds
+* cache_expire: 2.hours
 * cache_expire: 1.day
-or
 * cache_expire: 1.month
 
 If you want to force the expire the cache manually you can call the method
