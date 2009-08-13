@@ -46,7 +46,7 @@ module ArCache
         end
         toReturn = JSON.parse(toReturn.to_json)
       end
-      if toReturn.count > 1
+      if id == :all
         out = Array.new
         toReturn.each do |obj|
           out << hash_to_obj(obj.values.first)
