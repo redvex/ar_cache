@@ -91,7 +91,7 @@ module ArCache
     def hash_to_obj(hash)
       tmp = self.new
       hash.each do |k,v|
-        unless v.nil? or v.is_a?(Numeric)
+        unless v.nil? or v.is_a?(Numeric) or v == true or v == false
           v = v.gsub('"',"'")
         end
         eval(sprintf('tmp.%s = "%s"',k,v))
