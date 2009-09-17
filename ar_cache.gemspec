@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{ar_cache}
-  s.version = "0.1.3"
+  s.version = "0.1.4"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 1.2") if s.respond_to? :required_rubygems_version=
   s.authors = ["Gianni Mazza"]
-  s.date = %q{2009-09-11}
+  s.date = %q{2009-09-17}
   s.description = %q{Performe ActiveRecord cache in File System for heavy and repetitive query.}
   s.email = %q{redvex@me.com}
   s.extra_rdoc_files = ["CHANGELOG", "lib/ar_cache.rb", "README.rdoc"]
