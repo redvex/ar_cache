@@ -126,7 +126,7 @@ module ArCache
     def cache_reset?(file)
       filename   = File.join(RAILS_ROOT, "config", "database.yml")
       dbconf = YAML.load_file(filename)[RAILS_ENV]
-      if dbconf["cache_expire"].nil? and File.exists?(file)
+      if dbconf["cache_expire"].nil? or !File.exists?(file)
         return false
       else
         return File.open(file).ctime + dbconf["cache_expire"] > Time.now
