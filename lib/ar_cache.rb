@@ -58,6 +58,30 @@ module ArCache
       return out
     end
     
+    def find(id, params=nil)
+      if params[:cache]
+        params.delete(:cache)
+        cache_find(id, params)
+      elsif params[:cache_reset]
+        params.delete(:cache_reset)
+        super(id,params)
+      else
+        super(id,params)
+      end
+    end
+    
+    def find_first(params=nil)
+      find(:first, params)
+    end
+    
+    def find_last(params=nil)
+      find(:last, params)
+    end
+    
+    def find_all(params=nil)
+      find(:all, params)
+    end
+    
     def cache_find_first(params=nil)
       return cache_find(:first, params)
     end
@@ -110,6 +134,9 @@ module ArCache
     end
     
     def calculate_file_name(id, params)
+      if params.nil?
+        params = Array.new
+      end
       File.join(RAILS_ROOT, "tmp", "cache", 
                             Digest::MD5.hexdigest(class_name + "--" + id.to_s + "--"+ params.values.join("--"))+".query")
     end
