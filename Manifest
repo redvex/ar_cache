@@ -1,4 +1,3 @@
-ar_cache.gemspec
 CHANGELOG
 init.rb
 lib/ar_cache.rb
